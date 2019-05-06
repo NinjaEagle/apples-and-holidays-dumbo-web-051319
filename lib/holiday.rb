@@ -63,15 +63,15 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   holiday_hash.each do |season, holidays|
       puts "#{season.to_s.capitalize}:"
-  
+
       holidays.each do |holiday, items|
         holiday_string_split = holiday.to_s.split("_").collect do |word|
           words = word.capitalize!
-  
+
         end.join(" ")
-  
+
         puts "  #{holiday_string_split}: #{items.join(", ")}"
-  
+
       end
     end
   end
