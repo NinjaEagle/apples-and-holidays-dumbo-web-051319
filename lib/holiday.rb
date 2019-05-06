@@ -65,7 +65,6 @@ def all_supplies_in_holidays(holiday_hash)
        end.join(" ")
 
        puts "  #{holiday_string_split}: #{items.join(", ")}"
-
      end
    end
 end
